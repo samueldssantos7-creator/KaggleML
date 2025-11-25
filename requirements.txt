@@ -4,8 +4,9 @@ plotly
 matplotlib
 seaborn
 scikit-learn
-numpy==1.25.3
+numpy
 kaleido
 shap==0.41.0
+
 
 
