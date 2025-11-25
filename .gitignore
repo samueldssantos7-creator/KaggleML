@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# Virtual env
+.venv/
+venv/
+ENV/
+env/
+
+# IDEs
+.vscode/
+.idea/
+
+# System
+.DS_Store
+Thumbs.db
+
+# Streamlit outputs / caches
+outputs/
+.streamlit/
+
+# Data (não versionar datasets grandes)
+data/
+
+# Notebook checkpoints
+.ipynb_checkpoints/
