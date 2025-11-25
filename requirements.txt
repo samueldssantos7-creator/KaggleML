@@ -6,4 +6,5 @@ seaborn
 scikit-learn
 numpy
 kaleido
-# shap==0.41.0  # adicione só depois de testar localmente
+shap==0.41.0  
+
