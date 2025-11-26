@@ -14,7 +14,6 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import r2_score, mean_squared_error
 from sklearn.inspection import permutation_importance, PartialDependenceDisplay
 import numpy as np
-import plotly.graph_objects as go
 from sklearn.metrics import r2_score, mean_squared_error
 
 # IMPORTS ADICIONADOS
@@ -42,7 +41,7 @@ def train_model(model_name, X, y):
 
     preds = model.predict(X_test)
     r2 = r2_score(y_test, preds)
-    # substituir uso de `squared=False` por sqrt do MSE (compatível com todas as versões do sklearn)
+    # compatível com todas as versões do scikit-learn:
     rmse = np.sqrt(mean_squared_error(y_test, preds))
     return model, X_train, X_test, y_train, y_test, preds, r2, rmse
 
