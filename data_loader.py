@@ -23,13 +23,12 @@ def load_data_from_disk():
         os.path.join(base_dir, "data", "Climate_Change_Real_Physics.csv"),
         os.path.join(base_dir, "kaggleml", "data", "raw", "Climate_Change_Real_Physics.csv"),
     ]
+    # debug: mostra no log quais caminhos são verificados
+    for p in candidates:
+        print("DEBUG: verificando:", p, "->", Path(p).exists())
     for path in candidates:
         if os.path.exists(path):
-            try:
-                return read_csv_from_path(path)
-            except Exception as e:
-                st.error(f"Falha ao ler {path}: {e}")
-                return pd.DataFrame()
+            return pd.read_csv(path)
     return None  # sinaliza que não encontrou
 
 # --- ALTERE APENAS ESTA LINHA ---
