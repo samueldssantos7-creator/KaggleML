@@ -1,0 +1,526 @@
+Year,Country,Continent,Avg_Temperature(°C),CO2_Emissions(Mt),Sea_Level_Rise(mm),Climate_Risk_Index
+1950,Antarctica Base,Antarctica,-25.04,310.5,3.24,-21.71
+1951,Antarctica Base,Antarctica,-25.04,313.04,2.33,-21.68
+1952,Antarctica Base,Antarctica,-24.72,314.64,4.65,-20.88
+1953,Antarctica Base,Antarctica,-25.06,315.18,8.17,-21.01
+1954,Antarctica Base,Antarctica,-25.47,316.48,5.38,-21.84
+1955,Antarctica Base,Antarctica,-25.17,317.31,19.07,-19.98
+1956,Antarctica Base,Antarctica,-25.26,318.63,28.33,-19.13
+1957,Antarctica Base,Antarctica,-24.79,321.01,17.38,-19.4
+1958,Antarctica Base,Antarctica,-24.75,322.42,22.25,-18.78
+1959,Antarctica Base,Antarctica,-24.94,325.09,30.04,-18.15
+1960,Antarctica Base,Antarctica,-24.18,325.9,34.93,-16.48
+1961,Antarctica Base,Antarctica,-24.46,327.26,32.4,-17.09
+1962,Antarctica Base,Antarctica,-25.27,330.37,35.36,-17.85
+1963,Antarctica Base,Antarctica,-24.43,332.23,46.36,-15.4
+1964,Antarctica Base,Antarctica,-24.72,333.82,41.61,-16.22
+1965,Antarctica Base,Antarctica,-24.74,335.16,57.79,-14.57
+1966,Antarctica Base,Antarctica,-25.1,338.18,57.62,-14.98
+1967,Antarctica Base,Antarctica,-24.75,339.45,62.56,-13.9
+1968,Antarctica Base,Antarctica,-24.24,342.89,58.8,-13.34
+1969,Antarctica Base,Antarctica,-24.39,343.61,71.38,-12.27
+1970,Antarctica Base,Antarctica,-24.52,345.52,64.47,-13.06
+1971,Antarctica Base,Antarctica,-24.2,346.92,80.28,-10.92
+1972,Antarctica Base,Antarctica,-24.11,350.19,78.81,-10.78
+1973,Antarctica Base,Antarctica,-24.28,351.79,88.19,-10.01
+1974,Antarctica Base,Antarctica,-23.89,354.6,70.9,-11.02
+1975,Antarctica Base,Antarctica,-24.31,357.7,86.0,-9.98
+1976,Antarctica Base,Antarctica,-24.9,359.23,89.9,-10.4
+1977,Antarctica Base,Antarctica,-23.84,361.79,91.91,-8.47
+1978,Antarctica Base,Antarctica,-24.4,362.95,102.58,-8.2
+1979,Antarctica Base,Antarctica,-24.39,366.44,104.07,-7.85
+1980,Antarctica Base,Antarctica,-23.91,368.6,101.49,-7.29
+1981,Antarctica Base,Antarctica,-24.29,370.59,101.18,-7.79
+1982,Antarctica Base,Antarctica,-24.07,373.66,112.03,-6.22
+1983,Antarctica Base,Antarctica,-24.54,375.6,113.4,-6.7
+1984,Antarctica Base,Antarctica,-24.33,378.0,118.19,-5.78
+1985,Antarctica Base,Antarctica,-23.5,381.28,123.37,-3.85
+1986,Antarctica Base,Antarctica,-24.06,383.7,116.41,-5.27
+1987,Antarctica Base,Antarctica,-24.0,386.01,141.82,-2.51
+1988,Antarctica Base,Antarctica,-23.9,388.47,132.83,-3.14
+1989,Antarctica Base,Antarctica,-23.62,390.15,140.26,-1.89
+1990,Antarctica Base,Antarctica,-24.21,394.79,147.01,-1.87
+1991,Antarctica Base,Antarctica,-23.73,395.31,154.45,-0.39
+1992,Antarctica Base,Antarctica,-24.05,398.47,147.5,-1.4
+1993,Antarctica Base,Antarctica,-24.32,401.73,150.84,-1.31
+1994,Antarctica Base,Antarctica,-23.68,403.98,149.4,-0.39
+1995,Antarctica Base,Antarctica,-24.03,409.42,155.89,0.01
+1996,Antarctica Base,Antarctica,-24.14,411.55,162.14,0.58
+1997,Antarctica Base,Antarctica,-24.23,414.94,165.42,0.95
+1998,Antarctica Base,Antarctica,-23.49,416.82,161.82,1.79
+1999,Antarctica Base,Antarctica,-23.54,418.19,172.98,2.9
+2000,Antarctica Base,Antarctica,-23.56,422.75,171.6,2.95
+2001,Antarctica Base,Antarctica,-23.55,425.75,174.93,3.45
+2002,Antarctica Base,Antarctica,-23.47,430.43,176.04,3.92
+2003,Antarctica Base,Antarctica,-23.88,432.29,189.44,4.74
+2004,Antarctica Base,Antarctica,-23.81,435.9,193.82,5.47
+2005,Antarctica Base,Antarctica,-23.29,438.29,201.98,7.18
+2006,Antarctica Base,Antarctica,-23.73,440.79,191.55,5.6
+2007,Antarctica Base,Antarctica,-23.5,443.42,201.21,7.04
+2008,Antarctica Base,Antarctica,-23.21,447.74,203.07,7.89
+2009,Antarctica Base,Antarctica,-23.51,452.17,220.1,9.36
+2010,Antarctica Base,Antarctica,-23.66,454.63,204.65,7.71
+2011,Antarctica Base,Antarctica,-23.44,457.8,217.07,9.44
+2012,Antarctica Base,Antarctica,-23.37,461.13,212.77,9.28
+2013,Antarctica Base,Antarctica,-23.45,462.52,224.78,10.42
+2014,Antarctica Base,Antarctica,-23.67,467.65,224.87,10.37
+2015,Antarctica Base,Antarctica,-23.53,471.26,228.27,11.09
+2016,Antarctica Base,Antarctica,-23.58,474.4,232.79,11.62
+2017,Antarctica Base,Antarctica,-22.89,478.4,239.77,13.56
+2018,Antarctica Base,Antarctica,-23.47,479.98,240.58,12.85
+2019,Antarctica Base,Antarctica,-23.01,485.43,260.76,15.84
+2020,Antarctica Base,Antarctica,-22.79,489.07,249.77,15.24
+2021,Antarctica Base,Antarctica,-23.2,492.77,252.29,15.07
+2022,Antarctica Base,Antarctica,-23.15,494.99,249.57,14.98
+2023,Antarctica Base,Antarctica,-22.36,499.52,246.16,16.05
+2024,Antarctica Base,Antarctica,-23.51,503.83,256.64,15.59
+1950,Germany,Europe,9.02,311.09,-5.39,28.54
+1951,Germany,Europe,9.22,310.8,-0.15,29.35
+1952,Germany,Europe,9.05,313.28,3.74,29.61
+1953,Germany,Europe,9.24,316.78,0.37,29.73
+1954,Germany,Europe,8.87,316.43,18.26,30.95
+1955,Germany,Europe,9.05,317.08,20.02,31.42
+1956,Germany,Europe,8.74,320.41,19.33,31.06
+1957,Germany,Europe,8.92,320.76,33.33,32.74
+1958,Germany,Europe,8.75,323.36,32.59,32.55
+1959,Germany,Europe,9.45,326.84,23.9,32.91
+1960,Germany,Europe,9.54,326.02,31.46,33.76
+1961,Germany,Europe,9.41,328.76,33.87,33.94
+1962,Germany,Europe,8.22,330.1,36.88,32.52
+1963,Germany,Europe,8.83,331.78,53.66,35.21
+1964,Germany,Europe,9.09,332.51,49.65,35.23
+1965,Germany,Europe,8.81,337.32,58.32,35.91
+1966,Germany,Europe,8.96,337.85,58.31,36.17
+1967,Germany,Europe,9.09,340.03,59.85,36.62
+1968,Germany,Europe,9.32,341.47,66.31,37.69
+1969,Germany,Europe,8.93,345.5,77.17,38.39
+1970,Germany,Europe,9.27,344.05,72.94,38.41
+1971,Germany,Europe,9.15,348.4,72.46,38.39
+1972,Germany,Europe,9.18,349.77,81.25,39.38
+1973,Germany,Europe,9.16,352.79,85.0,39.88
+1974,Germany,Europe,9.63,354.95,87.15,40.9
+1975,Germany,Europe,9.23,356.05,91.24,40.77
+1976,Germany,Europe,9.41,359.75,91.59,41.26
+1977,Germany,Europe,9.25,362.71,97.24,41.74
+1978,Germany,Europe,9.38,363.56,103.49,42.6
+1979,Germany,Europe,9.71,366.94,108.03,43.71
+1980,Germany,Europe,9.68,368.52,103.45,43.3
+1981,Germany,Europe,9.46,371.24,108.98,43.65
+1982,Germany,Europe,9.27,373.96,122.46,44.84
+1983,Germany,Europe,9.16,374.83,121.29,44.62
+1984,Germany,Europe,9.73,379.13,122.14,45.77
+1985,Germany,Europe,9.29,380.86,122.88,45.27
+1986,Germany,Europe,9.87,382.76,125.26,46.47
+1987,Germany,Europe,9.5,385.21,131.56,46.66
+1988,Germany,Europe,9.36,388.1,134.22,46.87
+1989,Germany,Europe,9.47,391.56,134.14,47.2
+1990,Germany,Europe,9.21,394.23,132.96,46.82
+1991,Germany,Europe,9.59,396.0,145.05,48.69
+1992,Germany,Europe,9.93,400.94,146.2,49.56
+1993,Germany,Europe,9.39,402.22,150.41,49.23
+1994,Germany,Europe,9.8,404.75,149.86,49.93
+1995,Germany,Europe,10.18,408.39,156.96,51.39
+1996,Germany,Europe,9.94,411.14,158.99,51.37
+1997,Germany,Europe,9.76,413.86,164.99,51.83
+1998,Germany,Europe,9.78,415.79,170.49,52.5
+1999,Germany,Europe,10.07,420.97,182.27,54.38
+2000,Germany,Europe,10.06,421.73,175.92,53.77
+2001,Germany,Europe,9.57,427.7,174.3,53.18
+2002,Germany,Europe,9.19,427.96,179.37,53.13
+2003,Germany,Europe,9.89,430.88,187.21,55.1
+2004,Germany,Europe,10.15,436.62,186.12,55.67
+2005,Germany,Europe,10.03,436.98,185.9,55.48
+2006,Germany,Europe,10.25,442.87,193.65,56.88
+2007,Germany,Europe,10.32,442.52,198.93,57.5
+2008,Germany,Europe,9.45,448.7,200.0,56.61
+2009,Germany,Europe,9.96,450.72,204.25,57.9
+2010,Germany,Europe,9.64,454.62,209.29,58.12
+2011,Germany,Europe,10.13,457.44,217.06,59.77
+2012,Germany,Europe,9.53,459.54,223.39,59.61
+2013,Germany,Europe,9.78,464.37,228.26,60.72
+2014,Germany,Europe,10.38,467.56,224.34,61.38
+2015,Germany,Europe,10.57,472.94,226.26,62.12
+2016,Germany,Europe,10.25,475.31,237.84,62.92
+2017,Germany,Europe,10.28,476.87,239.79,63.24
+2018,Germany,Europe,9.73,479.6,227.8,61.36
+2019,Germany,Europe,10.32,484.65,249.01,64.61
+2020,Germany,Europe,10.61,488.57,238.1,64.15
+2021,Germany,Europe,10.12,490.41,250.42,64.74
+2022,Germany,Europe,9.53,495.73,251.55,64.24
+2023,Germany,Europe,10.37,498.13,257.33,66.19
+2024,Germany,Europe,10.03,502.2,253.7,65.53
+1950,USA,North America,12.29,309.94,-4.93,33.43
+1951,USA,North America,11.86,312.02,-0.46,33.34
+1952,USA,North America,11.72,312.95,4.23,33.65
+1953,USA,North America,12.64,313.44,10.68,35.7
+1954,USA,North America,12.13,315.54,13.44,35.31
+1955,USA,North America,12.26,317.65,21.29,36.41
+1956,USA,North America,11.92,319.01,19.62,35.8
+1957,USA,North America,11.66,318.93,31.33,36.57
+1958,USA,North America,12.05,324.6,30.88,37.4
+1959,USA,North America,13.07,325.03,37.1,39.56
+1960,USA,North America,11.87,326.37,26.97,36.83
+1961,USA,North America,11.95,328.52,31.39,37.49
+1962,USA,North America,11.87,329.51,50.44,39.32
+1963,USA,North America,12.21,332.92,52.9,40.24
+1964,USA,North America,11.97,334.02,56.62,40.31
+1965,USA,North America,11.93,336.41,51.55,39.87
+1966,USA,North America,11.84,336.96,60.63,40.67
+1967,USA,North America,11.85,341.74,62.31,41.1
+1968,USA,North America,12.14,341.21,60.04,41.28
+1969,USA,North America,12.32,343.05,62.35,41.86
+1970,USA,North America,12.3,346.27,68.81,42.65
+1971,USA,North America,12.16,347.21,77.28,43.33
+1972,USA,North America,12.06,350.76,77.5,43.38
+1973,USA,North America,11.87,353.19,83.22,43.78
+1974,USA,North America,12.56,353.98,80.18,44.55
+1975,USA,North America,11.91,355.07,87.74,44.4
+1976,USA,North America,12.14,359.4,94.19,45.61
+1977,USA,North America,12.41,359.77,88.44,45.45
+1978,USA,North America,12.46,363.11,93.7,46.22
+1979,USA,North America,12.77,365.73,98.62,47.3
+1980,USA,North America,12.14,369.34,107.65,47.44
+1981,USA,North America,11.75,372.36,104.52,46.7
+1982,USA,North America,12.45,373.94,113.86,48.76
+1983,USA,North America,12.55,375.23,114.72,49.06
+1984,USA,North America,12.62,379.51,120.69,49.97
+1985,USA,North America,12.41,380.46,120.34,49.68
+1986,USA,North America,12.45,383.83,127.45,50.61
+1987,USA,North America,12.85,388.11,127.87,51.47
+1988,USA,North America,12.49,389.86,122.81,50.5
+1989,USA,North America,12.06,390.31,134.74,51.08
+1990,USA,North America,13.14,394.02,141.63,53.58
+1991,USA,North America,12.9,396.5,132.44,52.43
+1992,USA,North America,12.9,399.7,139.61,53.3
+1993,USA,North America,12.79,403.38,148.42,54.2
+1994,USA,North America,13.39,405.67,154.91,55.85
+1995,USA,North America,12.58,408.12,153.25,54.6
+1996,USA,North America,12.48,411.57,161.36,55.43
+1997,USA,North America,12.9,413.16,166.17,56.62
+1998,USA,North America,12.61,417.6,166.65,56.47
+1999,USA,North America,12.65,418.54,173.39,57.24
+2000,USA,North America,12.52,423.26,179.35,57.88
+2001,USA,North America,12.94,426.87,187.88,59.54
+2002,USA,North America,12.46,427.79,173.11,57.39
+2003,USA,North America,13.04,433.13,185.22,59.75
+2004,USA,North America,12.53,435.02,201.23,60.66
+2005,USA,North America,12.91,438.0,196.13,60.88
+2006,USA,North America,12.96,441.52,192.05,60.73
+2007,USA,North America,13.48,444.71,206.23,63.07
+2008,USA,North America,12.77,449.05,198.05,61.42
+2009,USA,North America,12.96,450.59,211.97,63.17
+2010,USA,North America,13.42,452.31,209.21,63.66
+2011,USA,North America,12.67,456.89,205.23,62.38
+2012,USA,North America,13.01,461.48,210.55,63.65
+2013,USA,North America,12.91,462.74,228.85,65.38
+2014,USA,North America,12.57,467.18,222.77,64.5
+2015,USA,North America,12.23,470.6,227.23,64.6
+2016,USA,North America,13.26,474.11,240.24,67.63
+2017,USA,North America,12.99,478.96,228.97,66.33
+2018,USA,North America,13.11,483.93,238.07,67.66
+2019,USA,North America,13.16,484.89,240.78,68.07
+2020,USA,North America,12.96,487.93,244.84,68.31
+2021,USA,North America,12.92,491.57,249.03,68.87
+2022,USA,North America,13.6,495.51,238.75,69.05
+2023,USA,North America,13.54,500.53,245.13,69.85
+2024,USA,North America,13.07,502.8,251.96,69.94
+1950,China,Asia,13.67,309.22,8.76,36.84
+1951,China,Asia,14.4,312.45,7.11,37.93
+1952,China,Asia,13.87,311.93,9.45,37.35
+1953,China,Asia,14.26,313.41,9.3,37.99
+1954,China,Asia,14.28,315.87,16.22,38.83
+1955,China,Asia,14.43,317.51,12.09,38.73
+1956,China,Asia,14.27,320.16,19.45,39.36
+1957,China,Asia,13.74,321.56,29.12,39.6
+1958,China,Asia,13.97,322.78,33.25,40.42
+1959,China,Asia,13.72,324.01,23.72,39.15
+1960,China,Asia,13.78,327.11,43.77,41.4
+1961,China,Asia,14.68,326.23,39.56,42.29
+1962,China,Asia,14.03,330.06,44.0,41.95
+1963,China,Asia,14.54,332.0,46.07,43.02
+1964,China,Asia,14.11,334.09,48.72,42.75
+1965,China,Asia,13.73,336.18,45.76,41.98
+1966,China,Asia,14.31,338.58,55.08,43.9
+1967,China,Asia,14.38,339.85,56.8,44.24
+1968,China,Asia,14.35,341.08,58.11,44.39
+1969,China,Asia,13.79,344.32,71.65,45.07
+1970,China,Asia,14.4,346.47,74.91,46.41
+1971,China,Asia,14.64,349.78,64.3,45.88
+1972,China,Asia,14.16,348.98,77.13,46.41
+1973,China,Asia,14.15,352.95,81.43,47.02
+1974,China,Asia,14.2,353.88,76.97,46.69
+1975,China,Asia,13.99,355.95,82.62,47.05
+1976,China,Asia,14.13,360.19,104.16,49.62
+1977,China,Asia,14.49,361.93,90.21,48.85
+1978,China,Asia,14.28,364.46,98.61,49.5
+1979,China,Asia,14.44,368.68,107.25,50.81
+1980,China,Asia,14.47,367.8,113.85,51.48
+1981,China,Asia,15.04,370.29,112.04,52.28
+1982,China,Asia,14.7,372.8,116.86,52.38
+1983,China,Asia,14.06,376.46,111.86,51.09
+1984,China,Asia,14.52,378.09,122.1,52.9
+1985,China,Asia,14.16,381.05,124.4,52.73
+1986,China,Asia,14.74,384.05,131.4,54.46
+1987,China,Asia,14.73,386.87,129.15,54.35
+1988,China,Asia,14.74,387.0,134.04,54.86
+1989,China,Asia,14.24,391.59,131.09,54.05
+1990,China,Asia,14.63,395.05,143.41,56.04
+1991,China,Asia,14.66,396.74,148.19,56.65
+1992,China,Asia,14.7,398.94,144.69,56.47
+1993,China,Asia,14.6,401.8,151.61,57.14
+1994,China,Asia,15.08,404.56,149.53,57.8
+1995,China,Asia,14.59,407.69,164.73,58.74
+1996,China,Asia,15.05,410.94,153.57,58.47
+1997,China,Asia,15.02,413.9,164.91,59.71
+1998,China,Asia,14.61,417.63,175.05,60.31
+1999,China,Asia,14.68,421.81,169.27,60.03
+2000,China,Asia,15.27,423.95,172.39,61.35
+2001,China,Asia,14.73,425.09,171.78,60.53
+2002,China,Asia,14.53,427.64,178.16,60.99
+2003,China,Asia,14.92,431.6,193.25,63.28
+2004,China,Asia,15.16,433.74,187.93,63.22
+2005,China,Asia,15.08,437.83,186.89,63.2
+2006,China,Asia,14.95,441.42,198.46,64.34
+2007,China,Asia,15.65,444.52,196.31,65.33
+2008,China,Asia,14.74,446.93,200.22,64.48
+2009,China,Asia,15.3,450.08,213.6,66.82
+2010,China,Asia,14.71,453.43,212.36,65.97
+2011,China,Asia,15.17,456.76,214.51,67.04
+2012,China,Asia,15.46,459.14,225.98,68.74
+2013,China,Asia,14.89,463.42,221.93,67.7
+2014,China,Asia,15.22,467.77,234.05,69.63
+2015,China,Asia,14.8,470.7,220.6,67.8
+2016,China,Asia,15.05,473.61,239.97,70.25
+2017,China,Asia,15.14,477.32,234.42,70.02
+2018,China,Asia,15.85,482.55,235.35,71.43
+2019,China,Asia,15.42,484.43,244.91,71.84
+2020,China,Asia,15.3,490.35,243.2,71.78
+2021,China,Asia,15.47,492.71,252.6,73.1
+2022,China,Asia,15.47,496.27,257.85,73.81
+2023,China,Asia,15.36,500.82,254.66,73.55
+2024,China,Asia,15.55,503.29,254.92,73.97
+1950,Australia,Oceania,20.88,310.37,0.14,46.86
+1951,Australia,Oceania,21.07,312.79,3.73,47.62
+1952,Australia,Oceania,21.26,311.7,10.23,48.49
+1953,Australia,Oceania,20.96,316.8,11.6,48.43
+1954,Australia,Oceania,21.54,316.49,13.52,49.48
+1955,Australia,Oceania,21.26,318.15,18.43,49.64
+1956,Australia,Oceania,21.15,319.09,26.37,50.32
+1957,Australia,Oceania,21.15,320.21,21.0,49.84
+1958,Australia,Oceania,20.67,324.16,25.21,49.73
+1959,Australia,Oceania,21.61,325.09,31.17,51.79
+1960,Australia,Oceania,21.72,325.94,27.76,51.66
+1961,Australia,Oceania,21.31,326.12,35.99,51.87
+1962,Australia,Oceania,21.4,329.14,43.22,52.89
+1963,Australia,Oceania,20.82,331.47,49.86,52.8
+1964,Australia,Oceania,21.19,334.59,58.23,54.34
+1965,Australia,Oceania,20.78,334.8,49.04,52.82
+1966,Australia,Oceania,21.33,337.79,54.79,54.36
+1967,Australia,Oceania,20.9,340.19,66.72,55.03
+1968,Australia,Oceania,21.62,341.78,64.71,56.0
+1969,Australia,Oceania,21.47,344.37,68.74,56.3
+1970,Australia,Oceania,21.72,346.64,70.98,57.01
+1971,Australia,Oceania,21.31,348.82,80.7,57.47
+1972,Australia,Oceania,21.89,349.58,76.8,58.0
+1973,Australia,Oceania,21.41,351.0,77.09,57.37
+1974,Australia,Oceania,21.19,355.48,81.77,57.73
+1975,Australia,Oceania,21.26,354.99,75.38,57.18
+1976,Australia,Oceania,21.64,357.56,94.93,59.84
+1977,Australia,Oceania,21.14,361.86,94.26,59.23
+1978,Australia,Oceania,21.1,363.76,105.52,60.39
+1979,Australia,Oceania,21.4,366.99,101.63,60.61
+1980,Australia,Oceania,20.87,368.71,103.76,60.11
+1981,Australia,Oceania,21.2,370.23,107.09,61.01
+1982,Australia,Oceania,21.7,375.16,109.14,62.23
+1983,Australia,Oceania,21.95,376.41,120.12,63.75
+1984,Australia,Oceania,21.35,378.4,122.49,63.19
+1985,Australia,Oceania,21.83,381.27,125.68,64.37
+1986,Australia,Oceania,21.42,384.49,132.59,64.61
+1987,Australia,Oceania,22.21,386.23,126.05,65.24
+1988,Australia,Oceania,21.67,390.4,129.74,65.0
+1989,Australia,Oceania,21.53,390.83,138.62,65.7
+1990,Australia,Oceania,21.47,394.52,139.88,65.92
+1991,Australia,Oceania,22.17,398.86,145.68,67.77
+1992,Australia,Oceania,21.71,399.5,150.07,67.54
+1993,Australia,Oceania,21.61,401.21,142.16,66.69
+1994,Australia,Oceania,21.9,405.44,151.58,68.28
+1995,Australia,Oceania,21.35,409.45,150.18,67.52
+1996,Australia,Oceania,22.05,410.96,169.42,70.57
+1997,Australia,Oceania,22.08,413.18,164.31,70.2
+1998,Australia,Oceania,22.03,416.39,171.26,71.0
+1999,Australia,Oceania,22.23,417.94,178.4,72.08
+2000,Australia,Oceania,21.92,421.87,177.47,71.72
+2001,Australia,Oceania,21.65,425.78,175.14,71.28
+2002,Australia,Oceania,22.18,428.53,184.72,73.17
+2003,Australia,Oceania,22.08,431.26,171.26,71.81
+2004,Australia,Oceania,21.34,435.89,187.19,72.53
+2005,Australia,Oceania,21.49,436.76,198.3,73.91
+2006,Australia,Oceania,22.0,440.57,195.77,74.61
+2007,Australia,Oceania,21.94,444.71,193.09,74.45
+2008,Australia,Oceania,21.78,448.46,195.22,74.61
+2009,Australia,Oceania,22.39,450.29,210.75,77.18
+2010,Australia,Oceania,21.86,453.65,208.39,76.3
+2011,Australia,Oceania,22.09,459.39,215.65,77.67
+2012,Australia,Oceania,22.06,461.69,215.7,77.75
+2013,Australia,Oceania,21.99,463.84,220.31,78.2
+2014,Australia,Oceania,22.04,468.17,227.66,79.23
+2015,Australia,Oceania,22.06,470.79,217.51,78.39
+2016,Australia,Oceania,22.16,475.26,235.99,80.6
+2017,Australia,Oceania,22.7,474.94,233.8,81.17
+2018,Australia,Oceania,21.78,482.47,241.06,80.89
+2019,Australia,Oceania,21.92,483.86,251.07,82.18
+2020,Australia,Oceania,22.19,488.31,249.35,82.63
+2021,Australia,Oceania,22.18,492.61,250.32,82.93
+2022,Australia,Oceania,22.13,498.16,253.01,83.41
+2023,Australia,Oceania,22.5,500.49,261.44,84.92
+2024,Australia,Oceania,21.84,503.78,267.17,84.67
+1950,Brazil,South America,24.09,308.85,-3.77,51.2
+1951,Brazil,South America,24.11,311.45,5.11,52.26
+1952,Brazil,South America,24.52,313.48,9.27,53.38
+1953,Brazil,South America,24.34,314.39,16.45,53.87
+1954,Brazil,South America,24.24,315.01,17.51,53.87
+1955,Brazil,South America,24.49,317.58,16.75,54.29
+1956,Brazil,South America,24.04,319.67,21.08,54.16
+1957,Brazil,South America,23.68,320.14,32.47,54.77
+1958,Brazil,South America,23.83,322.11,17.23,53.57
+1959,Brazil,South America,23.75,324.08,39.71,55.8
+1960,Brazil,South America,23.95,327.51,46.26,56.93
+1961,Brazil,South America,24.08,329.3,26.0,55.18
+1962,Brazil,South America,23.78,332.45,33.77,55.66
+1963,Brazil,South America,24.94,333.06,52.42,59.3
+1964,Brazil,South America,24.4,334.5,53.27,58.66
+1965,Brazil,South America,24.32,336.63,53.02,58.62
+1966,Brazil,South America,24.03,337.78,54.6,58.39
+1967,Brazil,South America,24.24,338.14,54.56,58.73
+1968,Brazil,South America,24.34,340.76,69.96,60.55
+1969,Brazil,South America,23.83,344.83,61.55,59.15
+1970,Brazil,South America,24.03,346.94,68.88,60.27
+1971,Brazil,South America,24.05,348.67,74.03,60.9
+1972,Brazil,South America,24.17,348.93,78.6,61.56
+1973,Brazil,South America,24.5,350.84,80.4,62.33
+1974,Brazil,South America,24.45,355.19,90.82,63.52
+1975,Brazil,South America,24.27,357.0,88.11,63.07
+1976,Brazil,South America,24.43,359.68,91.2,63.75
+1977,Brazil,South America,24.23,360.73,87.49,63.14
+1978,Brazil,South America,24.07,365.51,94.54,63.84
+1979,Brazil,South America,24.73,365.4,100.03,65.37
+1980,Brazil,South America,24.28,369.75,106.39,65.54
+1981,Brazil,South America,25.14,370.08,102.56,66.47
+1982,Brazil,South America,24.7,373.67,114.07,67.14
+1983,Brazil,South America,24.49,375.65,115.72,67.09
+1984,Brazil,South America,24.83,378.19,130.05,69.16
+1985,Brazil,South America,24.15,380.32,122.06,67.45
+1986,Brazil,South America,24.33,386.02,134.2,69.22
+1987,Brazil,South America,24.43,387.71,132.34,69.26
+1988,Brazil,South America,24.49,390.29,131.98,69.45
+1989,Brazil,South America,24.32,390.73,133.25,69.34
+1990,Brazil,South America,24.65,392.78,136.15,70.23
+1991,Brazil,South America,24.19,396.95,145.15,70.65
+1992,Brazil,South America,24.07,400.29,148.87,71.01
+1993,Brazil,South America,24.33,403.46,158.86,72.55
+1994,Brazil,South America,24.49,405.46,153.72,72.38
+1995,Brazil,South America,24.74,408.43,160.19,73.56
+1996,Brazil,South America,24.79,409.82,153.93,73.06
+1997,Brazil,South America,24.48,413.52,160.82,73.48
+1998,Brazil,South America,25.1,417.8,171.05,75.64
+1999,Brazil,South America,24.69,418.42,177.57,75.71
+2000,Brazil,South America,25.5,422.64,176.97,77.07
+2001,Brazil,South America,24.72,425.71,179.17,76.29
+2002,Brazil,South America,25.04,428.41,186.78,77.67
+2003,Brazil,South America,24.45,430.85,176.32,75.85
+2004,Brazil,South America,24.53,435.25,178.24,76.39
+2005,Brazil,South America,25.63,438.26,192.47,79.6
+2006,Brazil,South America,24.92,441.88,195.51,79.03
+2007,Brazil,South America,24.82,445.15,200.84,79.58
+2008,Brazil,South America,24.73,447.78,207.96,80.28
+2009,Brazil,South America,24.72,450.54,209.18,80.52
+2010,Brazil,South America,24.97,453.1,209.95,81.1
+2011,Brazil,South America,25.12,458.4,213.37,81.94
+2012,Brazil,South America,25.41,461.48,219.79,83.17
+2013,Brazil,South America,24.61,464.05,215.17,81.64
+2014,Brazil,South America,24.84,467.13,223.07,82.92
+2015,Brazil,South America,25.2,470.93,227.15,84.06
+2016,Brazil,South America,25.08,474.83,221.12,83.47
+2017,Brazil,South America,25.03,476.9,228.45,84.23
+2018,Brazil,South America,25.55,481.96,244.09,86.83
+2019,Brazil,South America,25.55,484.7,242.24,86.79
+2020,Brazil,South America,24.94,488.16,243.49,86.16
+2021,Brazil,South America,25.19,491.73,249.3,87.3
+2022,Brazil,South America,25.28,495.76,257.95,88.51
+2023,Brazil,South America,24.72,500.38,242.73,86.38
+2024,Brazil,South America,24.77,504.07,257.88,88.15
+1950,Nigeria,Africa,25.46,308.83,2.71,53.9
+1951,Nigeria,Africa,25.84,312.27,-9.46,53.43
+1952,Nigeria,Africa,26.15,312.51,-0.39,54.81
+1953,Nigeria,Africa,26.04,314.82,13.4,56.15
+1954,Nigeria,Africa,25.77,316.36,19.98,56.47
+1955,Nigeria,Africa,26.07,317.72,12.83,56.28
+1956,Nigeria,Africa,25.83,319.1,20.14,56.71
+1957,Nigeria,Africa,25.7,322.95,16.43,56.34
+1958,Nigeria,Africa,26.07,324.43,24.65,57.78
+1959,Nigeria,Africa,25.96,325.75,40.63,59.29
+1960,Nigeria,Africa,26.01,327.18,45.79,59.96
+1961,Nigeria,Africa,26.4,327.71,40.0,59.98
+1962,Nigeria,Africa,26.66,331.46,42.16,60.78
+1963,Nigeria,Africa,26.35,331.28,42.11,60.29
+1964,Nigeria,Africa,26.26,335.95,47.17,60.91
+1965,Nigeria,Africa,25.84,336.06,47.64,60.32
+1966,Nigeria,Africa,26.06,339.04,50.77,61.12
+1967,Nigeria,Africa,26.63,340.37,63.09,63.27
+1968,Nigeria,Africa,26.06,342.86,55.89,61.82
+1969,Nigeria,Africa,26.21,345.42,65.25,63.11
+1970,Nigeria,Africa,26.49,347.33,72.28,64.32
+1971,Nigeria,Africa,26.14,350.28,78.14,64.54
+1972,Nigeria,Africa,26.43,350.32,84.64,65.63
+1973,Nigeria,Africa,26.53,352.94,85.86,66.03
+1974,Nigeria,Africa,26.13,354.28,78.78,64.79
+1975,Nigeria,Africa,27.02,354.91,81.98,66.47
+1976,Nigeria,Africa,26.33,358.92,92.54,66.7
+1977,Nigeria,Africa,26.69,362.25,91.58,67.31
+1978,Nigeria,Africa,26.53,363.59,96.76,67.65
+1979,Nigeria,Africa,26.61,367.72,105.17,68.82
+1980,Nigeria,Africa,26.83,369.16,105.91,69.3
+1981,Nigeria,Africa,26.62,369.62,105.24,68.93
+1982,Nigeria,Africa,26.69,372.83,118.19,70.49
+1983,Nigeria,Africa,26.62,375.86,124.01,71.12
+1984,Nigeria,Africa,27.32,378.58,121.83,72.1
+1985,Nigeria,Africa,26.79,379.11,124.41,71.58
+1986,Nigeria,Africa,26.78,384.73,125.31,71.93
+1987,Nigeria,Africa,26.53,384.81,125.25,71.56
+1988,Nigeria,Africa,26.78,388.08,141.35,73.72
+1989,Nigeria,Africa,26.27,391.71,138.72,72.86
+1990,Nigeria,Africa,26.46,395.2,139.33,73.38
+1991,Nigeria,Africa,26.42,396.73,146.74,74.14
+1992,Nigeria,Africa,26.8,399.34,142.56,74.42
+1993,Nigeria,Africa,26.9,401.8,148.64,75.31
+1994,Nigeria,Africa,26.58,406.77,155.12,75.73
+1995,Nigeria,Africa,26.29,408.81,148.7,74.75
+1996,Nigeria,Africa,27.11,409.21,158.24,76.96
+1997,Nigeria,Africa,26.58,416.19,165.42,77.23
+1998,Nigeria,Africa,27.37,418.1,178.31,79.79
+1999,Nigeria,Africa,27.09,420.72,174.46,79.12
+2000,Nigeria,Africa,26.63,423.28,170.91,78.21
+2001,Nigeria,Africa,26.76,425.51,176.23,79.05
+2002,Nigeria,Africa,27.12,429.26,182.44,80.38
+2003,Nigeria,Africa,26.51,433.11,184.53,79.87
+2004,Nigeria,Africa,26.3,434.02,188.59,80.02
+2005,Nigeria,Africa,27.33,437.75,195.65,82.45
+2006,Nigeria,Africa,27.45,440.02,202.11,83.39
+2007,Nigeria,Africa,26.84,444.82,194.7,81.98
+2008,Nigeria,Africa,27.25,447.09,212.42,84.48
+2009,Nigeria,Africa,26.8,452.26,200.9,82.9
+2010,Nigeria,Africa,26.43,454.14,211.62,83.51
+2011,Nigeria,Africa,26.84,457.17,205.53,83.67
+2012,Nigeria,Africa,26.83,461.17,211.15,84.42
+2013,Nigeria,Africa,27.0,461.16,229.36,86.49
+2014,Nigeria,Africa,26.89,469.1,220.99,85.88
+2015,Nigeria,Africa,26.74,471.34,229.01,86.58
+2016,Nigeria,Africa,27.42,475.11,230.5,87.94
+2017,Nigeria,Africa,26.81,477.63,230.37,87.13
+2018,Nigeria,Africa,27.2,481.13,242.57,89.11
+2019,Nigeria,Africa,27.55,484.11,240.14,89.55
+2020,Nigeria,Africa,26.9,488.48,232.88,88.06
+2021,Nigeria,Africa,27.36,493.0,247.09,90.39
+2022,Nigeria,Africa,27.31,495.83,244.19,90.17
+2023,Nigeria,Africa,27.41,498.91,249.23,90.98
+2024,Nigeria,Africa,26.78,503.43,261.33,91.47
