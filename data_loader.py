@@ -1,7 +1,36 @@
 import os
 import pandas as pd
+import io
 import streamlit as st
 from pathlib import Path
+
+# leitura de arquivo em disco, cacheada
+@st.cache_data
+def read_csv_from_path(path):
+    return pd.read_csv(path)
+
+# leitura a partir de bytes (uploaded), cacheada
+@st.cache_data
+def read_csv_from_bytes(bts):
+    return pd.read_csv(io.BytesIO(bts))
+
+# função que apenas tenta localizar arquivo em disco (sem widgets)
+def load_data_from_disk():
+    base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+    candidates = [
+        os.path.join(base_dir, "data", "raw", "Climate_Change_Real_Physics.csv"),
+        os.path.join(base_dir, "src", "data", "raw", "Climate_Change_Real_Physics.csv"),
+        os.path.join(base_dir, "data", "Climate_Change_Real_Physics.csv"),
+        os.path.join(base_dir, "kaggleml", "data", "raw", "Climate_Change_Real_Physics.csv"),
+    ]
+    for path in candidates:
+        if os.path.exists(path):
+            try:
+                return read_csv_from_path(path)
+            except Exception as e:
+                st.error(f"Falha ao ler {path}: {e}")
+                return pd.DataFrame()
+    return None  # sinaliza que não encontrou
 
 # --- ALTERE APENAS ESTA LINHA ---
 DEFAULT_PATH = Path("data/raw/Climate_Change_Real_Physics.csv")
