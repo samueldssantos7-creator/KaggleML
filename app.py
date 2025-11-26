@@ -12,6 +12,12 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import r2_score, mean_squared_error
+from sklearn.inspection import permutation_importance, PartialDependenceDisplay
+import numpy as np
+import plotly.graph_objects as go
+from sklearn.metrics import r2_score, mean_squared_error
+
+# IMPORTS ADICIONADOS
 from data_loader import load_data_from_disk, read_csv_from_bytes
 
 # Configuração da página
@@ -33,9 +39,11 @@ def train_model(model_name, X, y):
         model = LinearRegression().fit(X_train, y_train)
     else:
         model = RandomForestRegressor(n_estimators=100, random_state=42).fit(X_train, y_train)
+
     preds = model.predict(X_test)
     r2 = r2_score(y_test, preds)
-    rmse = mean_squared_error(y_test, preds, squared=False)
+    # substituir uso de `squared=False` por sqrt do MSE (compatível com todas as versões do sklearn)
+    rmse = np.sqrt(mean_squared_error(y_test, preds))
     return model, X_train, X_test, y_train, y_test, preds, r2, rmse
 
 try:
@@ -45,6 +53,32 @@ except Exception:
     SHAP_AVAILABLE = False
     import streamlit as st
     st.warning("Biblioteca 'shap' não disponível — funcionalidades de interpretabilidade desativadas.")
+
+def show_permutation_importance(model, X, y, feature_names, n_repeats=10):
+    r = permutation_importance(model, X, y, n_repeats=n_repeats, random_state=42, n_jobs=-1)
+    fi_df = pd.DataFrame({
+        'feature': feature_names,
+        'importance_mean': r.importances_mean,
+        'importance_std': r.importances_std
+    }).sort_values('importance_mean', ascending=False)
+    fig = px.bar(fi_df, x='feature', y='importance_mean', error_y='importance_std', title='Permutation Importance')
+    st.plotly_chart(fig, use_container_width=True)
+    # se houver figura matplotlib antes/ depois, garantir fechamento
+    try:
+        plt.close('all')
+    except Exception:
+        pass
+    return fi_df
+
+def show_partial_dependence(model, X, features):
+    try:
+        fig, ax = plt.subplots(figsize=(6,4))
+        PartialDependenceDisplay.from_estimator(model, X, features, ax=ax)
+        st.pyplot(fig)
+    except Exception as e:
+        st.error(f"Falha ao gerar Partial Dependence: {e}")
+    finally:
+        plt.close('all')
 
 def main():
     st.title("🌍 Global Climate Change Analytics")
@@ -173,11 +207,31 @@ def main():
                             'y_true': st.session_state['y_test'].reset_index(drop=True),
                             'y_pred': st.session_state['preds']
                         })
-                        fig = px.scatter(df_pred, x='y_true', y='y_pred', trendline="ols", title="Predições vs Observado")
-                        fig.add_shape(type="line", x0=df_pred['y_true'].min(), x1=df_pred['y_true'].max(),
-                                      y0=df_pred['y_true'].min(), y1=df_pred['y_true'].max(),
-                                      line=dict(dash="dash", color="gray"))
+                        # scatter com linha identidade e linha de ajuste
+                        x = df_pred['y_true'].to_numpy()
+                        y = df_pred['y_pred'].to_numpy()
+                        # métricas
+                        r2 = r2_score(x, y)
+                        rmse = np.sqrt(mean_squared_error(x, y))
+                        st.write(f"R²: {r2:.3f} — RMSE: {rmse:.3f}")
+
+                        fig = px.scatter(df_pred, x='y_true', y='y_pred', title="Predições vs Observado")
+                        # identidade
+                        fig.add_trace(go.Scatter(x=[x.min(), x.max()], y=[x.min(), x.max()],
+                                                 mode='lines', name='y = x', line=dict(color='black', dash='dash')))
+                        # linha de ajuste (opcional se já tiver)
+                        m, b = np.polyfit(x, y, 1)
+                        x_line = np.linspace(x.min(), x.max(), 100)
+                        fig.add_trace(go.Scatter(x=x_line, y=m*x_line+b, mode='lines', name=f'Fit: y={m:.3f}x+{b:.3f}', line=dict(color='red')))
                         st.plotly_chart(fig, use_container_width=True)
+
+                        # resíduos
+                        res = x - y
+                        fig2 = px.scatter(x=y, y=res, labels={'x':'y_pred','y':'resíduo (y_true - y_pred)'}, title="Resíduos vs y_pred")
+                        fig2.add_hline(y=0, line_dash="dash", line_color="black")
+                        st.plotly_chart(fig2, use_container_width=True)
+                        # histograma de resíduos
+                        st.plotly_chart(px.histogram(pd.DataFrame({'res':res}), x='res', nbins=40, title="Histograma dos resíduos"), use_container_width=True)
 
                         # feature importances for RF
                         if model_choice == "Random Forest" and hasattr(st.session_state['model'], "feature_importances_"):
@@ -186,6 +240,33 @@ def main():
                             fi_df = fi_df.sort_values('importance', ascending=False)
                             fig_fi = px.bar(fi_df, x='feature', y='importance', title="Feature Importances (Random Forest)")
                             st.plotly_chart(fig_fi, use_container_width=True)
+
+                        # Permutation Importance (não depende de SHAP)
+                        if model_choice == "Random Forest" and 'model' in st.session_state:
+                            st.markdown("### Importância das Features (Permutation)")
+                            fi_df_perm = show_permutation_importance(
+                                st.session_state['model'],
+                                st.session_state['X_test'],
+                                st.session_state['y_test'],
+                                st.session_state['feats']
+                            )
+                            st.write(fi_df_perm)
+
+                        # Partial Dependence Plots (usar session_state)
+                        if 'model' in st.session_state:
+                            st.markdown("### Dependência Parcial")
+                            num_cols_to_plot = min(len(st.session_state['feats']), 3)
+                            selected_partial_feats = st.multiselect(
+                                "Selecione as features para Dependência Parcial",
+                                st.session_state['feats'],
+                                max_selections=num_cols_to_plot
+                            )
+                            if selected_partial_feats:
+                                show_partial_dependence(
+                                    st.session_state['model'],
+                                    st.session_state['X_test'],
+                                    selected_partial_feats
+                                )
 
                         # permitir download de predições
                         csv = df_pred.to_csv(index=False).encode('utf-8')
