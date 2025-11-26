@@ -1,8 +1,8 @@
 import os
-import pandas as pd
-import io
 import streamlit as st
 from pathlib import Path
+import pandas as pd
+import io
 
 # leitura de arquivo em disco, cacheada
 @st.cache_data
@@ -14,33 +14,39 @@ def read_csv_from_path(path):
 def read_csv_from_bytes(bts):
     return pd.read_csv(io.BytesIO(bts))
 
+# FLAG: ativar debug apenas se APP_DEBUG=1 no ambiente
+DEBUG = os.getenv("APP_DEBUG", "0") == "1"
+
 # função que apenas tenta localizar arquivo em disco (sem widgets)
 def load_data_from_disk():
-    root = Path(__file__).resolve().parents[1]  # assume project root = parent of src/
+    root = Path(__file__).resolve().parents[1]  # raiz do projeto
     filename = "Climate_Change_Real_Physics.csv"
 
     # procura recursivamente no repositório pela primeira ocorrência do arquivo
     matches = list(root.rglob(filename))
-    st.write("DEBUG: projeto root =", root)
-    st.write("DEBUG: matches encontrados =", [str(p) for p in matches][:20])
+    if DEBUG:
+        st.write("DEBUG: projeto root =", root)
+        st.write("DEBUG: matches encontrados =", [str(p) for p in matches][:20])
 
     if matches:
         path = matches[0]
-        st.write("DEBUG: carregando arquivo encontrado em:", path)
+        if DEBUG:
+            st.write("DEBUG: carregando arquivo encontrado em:", path)
         try:
             return pd.read_csv(path)
         except Exception as e:
+            if DEBUG:
+                st.write("DEBUG: erro lendo arquivo:", e)
             st.error(f"Falha ao ler {path}: {e}")
             return None
 
-    # fallback: caminhos comuns verificados anteriormente (mantém compatibilidade)
+    # fallback: caminhos padrão (sem prints)
     candidates = [
         root / "data" / "raw" / filename,
         root / "kaggleml" / "data" / "raw" / filename,
         root / "kaggleml" / filename,
     ]
     for p in candidates:
-        st.write("DEBUG: verificando:", p, "->", p.exists())
         if p.exists():
             try:
                 return pd.read_csv(p)
