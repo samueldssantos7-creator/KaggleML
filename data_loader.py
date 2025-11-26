@@ -1,9 +1,11 @@
+import os
 import pandas as pd
 import streamlit as st
 from pathlib import Path
 
-# Ajuste este caminho se necessário
+# --- ALTERE APENAS ESTA LINHA ---
 DEFAULT_PATH = Path("data/raw/Climate_Change_Real_Physics.csv")
+# --------------------------------
 
 @st.cache_data
 def load_data(path: str | Path = DEFAULT_PATH) -> pd.DataFrame:
