@@ -69,3 +69,19 @@ def load_data():
         except Exception as e:
             st.error(f"Falha ao ler o arquivo enviado: {e}")
     return pd.DataFrame()
+
+import os
+from pathlib import Path
+import streamlit as st
+
+# DEBUG TEMPORÁRIO: mostrar informações de caminhos e existência do arquivo
+st.write("DEBUG: cwd =", os.getcwd())
+st.write("DEBUG: __file__ =", Path(__file__).resolve())
+root = Path(__file__).resolve().parents[1]  # pasta do projeto (assumida)
+st.write("DEBUG: projeto root =", root)
+candidate = root / "data" / "raw" / "Climate_Change_Real_Physics.csv"
+st.write("DEBUG: verificando:", candidate, "->", candidate.exists())
+
+# lista arquivos top-level (limitar saída)
+files = [p.relative_to(root) for p in root.rglob("*") if p.is_file()][:200]
+st.write("DEBUG: arquivos no repo (até 200):", files)
